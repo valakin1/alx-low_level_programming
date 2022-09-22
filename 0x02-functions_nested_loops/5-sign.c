@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * print_sign -> prints sign based on condition
@@ -9,12 +9,12 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar('+');
+		_puthar('+');
 		return (1);
 	}
 	else if (n == 0)
 	{
-		_putchar('0');\
+		_puthar('0');
 		return (0);
 	}
 	else
