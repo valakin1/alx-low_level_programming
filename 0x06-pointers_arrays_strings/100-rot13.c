@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * rot13 - encode string using rot13
@@ -6,7 +6,7 @@
  * Return: encoded string
  */
 
-char *rot13(char *s)
+char *rot13(char *);
 {
 	int i, j;
 
