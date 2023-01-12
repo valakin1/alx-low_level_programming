@@ -1,25 +1,19 @@
 #include <stdio.h>
-
 /**
- * main - print sum of multiple of 3 or 5
- * Return: 0
+ * main - main function
+ * Return: void
  */
-
 int main(void)
 {
-	int n;
-	int sum;
+	int i, x;
 
-	sum = 0;
-
-gfor (n = 0; n < 1024; n++)
+	for (i = 0; i < 1024; i++)
 	{
-		if ((n % 3 == 0) || (n % 5 == 0))
+		if (i % 3 == 0 || i % 5 == 0)
 		{
-			sum += n;
+			x += i;
 		}
 	}
-	printf("%d\n", sum);
+	printf("%d\n", x);
 	return (0);
 }
-			

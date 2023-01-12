@@ -1,27 +1,31 @@
 #include <stdio.h>
-
+#include "holberton.h"
 /**
- * main - print first 50 Fibonacci numbers
- * Return: 0
+ * main - main function
+ * Description - Print first 50 fibo numbers
+ * Return: void
  */
-
 int main(void)
 {
-	int counter;
-	int countto = 50;
-	long a = 1;
-	long b = 2;
+	long cnt, new, aux, i;
 
-	for (counter = 1; counter <= (countto / 2); counter++)
+	cnt = 0;
+	new = 1;
+	for (i = 0; i < 50; i++)
 	{
-		printf("%li %li ", a, b);
-		a += b;
-		b += a;
+		aux = cnt + new;
+		cnt = new;
+		new = aux;
+		printf("%lu", aux);
+		if (i == 49)
+		{
+			putchar('\n');
+		}
+		else
+		{
+			printf(", ");
+		}
 	}
-	if (countto % 2 == 1)
-		printf("%li", a);
-
-	printf("\n");
 
 	return (0);
 }
